@@ -1,0 +1,41 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Oct 11, 2009 at 06:27 AM
+-- Server version: 5.0.37
+-- PHP Version: 5.2.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `electronics`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `order_detail`
+-- 
+
+CREATE TABLE `order_detail` (
+  `userid` varchar(20) collate latin1_general_ci NOT NULL,
+  `EMI` varchar(30) collate latin1_general_ci default NULL,
+  `Quantity` varchar(5) collate latin1_general_ci NOT NULL,
+  `model` varchar(40) collate latin1_general_ci NOT NULL,
+  `price` varchar(30) collate latin1_general_ci NOT NULL,
+  `type` varchar(30) collate latin1_general_ci NOT NULL,
+  `company` varchar(30) collate latin1_general_ci NOT NULL,
+  `warranty` varchar(30) collate latin1_general_ci NOT NULL,
+  `shipping_time` varchar(30) collate latin1_general_ci NOT NULL,
+  `Order_Date` datetime NOT NULL,
+  `Delivery_Date` datetime NOT NULL,
+  `total_price` varchar(30) collate latin1_general_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Dumping data for table `order_detail`
+-- 
+
+INSERT INTO `order_detail` VALUES ('parag', 'Rs.1183 for 6 months', '3', '21PT4437', 'Rs. 7100', 'TV', 'PHILIPS', '6 months', '6 days', '2009-10-04 04:53:56', '2009-10-10 04:53:56', 'Rs. 21300');

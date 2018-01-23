@@ -1,0 +1,50 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Oct 11, 2009 at 06:28 AM
+-- Server version: 5.0.37
+-- PHP Version: 5.2.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `electronics`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `user_detail`
+-- 
+
+CREATE TABLE `user_detail` (
+  `userid` varchar(30) collate latin1_general_ci NOT NULL,
+  `password` varchar(30) collate latin1_general_ci NOT NULL,
+  `V_Password` varchar(12) collate latin1_general_ci NOT NULL,
+  `F_Name` varchar(20) collate latin1_general_ci NOT NULL,
+  `M_Name` varchar(20) collate latin1_general_ci NOT NULL,
+  `L_Name` varchar(20) collate latin1_general_ci NOT NULL,
+  `Email` varchar(50) collate latin1_general_ci NOT NULL,
+  `Phone_No` varchar(15) collate latin1_general_ci NOT NULL,
+  `Address` varchar(200) collate latin1_general_ci NOT NULL,
+  `City` varchar(15) collate latin1_general_ci NOT NULL,
+  `State` varchar(15) collate latin1_general_ci NOT NULL,
+  `country` varchar(30) collate latin1_general_ci NOT NULL,
+  `Pin` int(15) NOT NULL,
+  `sex` varchar(10) collate latin1_general_ci NOT NULL,
+  `Education` varchar(50) collate latin1_general_ci NOT NULL,
+  `Industry` varchar(50) collate latin1_general_ci NOT NULL,
+  `status` char(3) collate latin1_general_ci NOT NULL,
+  `tm` datetime NOT NULL,
+  PRIMARY KEY  (`userid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Dumping data for table `user_detail`
+-- 
+
+INSERT INTO `user_detail` VALUES ('parag', '123456789', '123456789', 'parag', 'r', 'akbari', 'parag@yahoo.com', '9974486965', 'malaviya nagar', 'rajkot', 'gujarat', 'india', 340009, 'M', '', '', '', '0000-00-00 00:00:00');
+INSERT INTO `user_detail` VALUES ('kj', 'asdfgh', 'asdfgh', 'kedfjlaks', 'kjflksdjf', 'gjdflkgj', 'kjdsflka@gmail.co', '12', 'dfsalkjj;las\r\nkfjsd;f\r\n', 'sdfkajslkdfj', 'jklsdjfa', 'sfkjaslkf', 0, '0', '0', '0', 'on', '2009-10-08 03:12:21');
+INSERT INTO `user_detail` VALUES ('parag1', 'ravi12', 'ravi12', 'Parag', 'Rameshbhai', 'Akbari', 'paragakbari@yahoo.com', '9974486965', 'Malaviya Nagar', 'Rajkot', 'Gujarat', 'India', 0, 'Male', 'Graduated/Post Graduate - Professional', 'Self Employed Professional', 'on', '2009-09-12 12:12:12');

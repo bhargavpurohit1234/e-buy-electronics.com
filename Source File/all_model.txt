@@ -1,0 +1,331 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Oct 11, 2009 at 06:26 AM
+-- Server version: 5.0.37
+-- PHP Version: 5.2.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `electronics`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `all_model`
+-- 
+
+CREATE TABLE `all_model` (
+  `image` varchar(200) collate latin1_general_ci NOT NULL,
+  `Price` varchar(20) collate latin1_general_ci default NULL,
+  `Offer_Price` varchar(30) collate latin1_general_ci default NULL,
+  `You Save` varchar(20) collate latin1_general_ci default NULL,
+  `Warranty` varchar(50) collate latin1_general_ci default NULL,
+  `EMI` varchar(30) collate latin1_general_ci default NULL,
+  `Shipping_Time` varchar(30) collate latin1_general_ci default NULL,
+  `name` varchar(30) collate latin1_general_ci default NULL,
+  `type` varchar(20) collate latin1_general_ci default NULL,
+  `model` varchar(30) collate latin1_general_ci default NULL,
+  `Description` varchar(100) collate latin1_general_ci NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- 
+-- Dumping data for table `all_model`
+-- 
+
+INSERT INTO `all_model` VALUES ('All/21PT4437.jpg', 'Rs. 7900', 'Rs. 7100', 'Rs. 800', '6 months', 'Rs.1183 for 6 months', '6 days', 'PHILIPS', 'TV', '21PT4437', '');
+INSERT INTO `all_model` VALUES ('All/21PT5017B.jpg', 'Rs. 7590', 'Rs. 6800', 'Rs. 790', '1 Year', 'Rs. 1133 for 6 months', '6 day', 'PHILIPS', 'LCD', '21PT5017B', '');
+INSERT INTO `all_model` VALUES ('All/LA22A450C1_22.jpg', 'Rs. 18995', 'Rs. 18995', 'Rs. 0', '6 months', 'Rs. 3166 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA22A450C1_22', '');
+INSERT INTO `all_model` VALUES ('All/KLV-32S400A_32.jpg', 'Rs. 42900', 'Rs. 35990', 'Rs. 6910', '6 months', 'Rs. 5998 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-32S400A_32', '');
+INSERT INTO `all_model` VALUES ('All/HD_LCD.jpg', 'Rs. 54990', 'Rs. 49990', 'Rs. 5000', '1 year', 'rs. 8332 for 6 months', '10 days', 'Sony', 'LCD', 'HD_LCD', '');
+INSERT INTO `all_model` VALUES ('All/LA32A450C1_32.jpg', 'Rs. 34995', 'Rs. 34995', 'Rs. 0', '6 months', 'Rs. 5833 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA32A450C1_32', '');
+INSERT INTO `all_model` VALUES ('All/KLV-32S400A.jpg', 'Rs. 42900', 'Rs. 35990', 'Rs. 6910', '1 year', 'Rs. 5998 for 6 months', '6 days', 'Sony Bravia', 'LCD', 'KLV-32S400A', '');
+INSERT INTO `all_model` VALUES ('All/21FLAT.jpg', 'Rs. 6090', 'Rs. 5825', 'Rs. 265', '1 year', 'Rs.971 for 6 months', '6 days', 'SANSUI', 'TV', '21FLAT', '');
+INSERT INTO `all_model` VALUES ('All/29ULTRA_SLIM.jpg', 'Rs. 13090', 'Rs. 11950', 'Rs. 1140', '1 year', 'Rs.1992 for 6 months', '6 days', 'VIDEOCON', 'TV', '29''ULTRA_SLIM', '');
+INSERT INTO `all_model` VALUES ('All/29FLAT.jpg', 'Rs. 10790', 'Rs. 10425', 'Rs. 365', '1 year', 'Rs. 1783 for 6 months', '6 days', 'VIDEOCON', 'TV', '29FLAT', '');
+INSERT INTO `all_model` VALUES ('All/21ULTRA.jpg', 'Rs. 7790', 'Rs. 7290', 'Rs. 400', '6 months', 'Rs.1215 for 6 months', '6 days', 'VIDEOCON', 'TV', '21ULTRA', '');
+INSERT INTO `all_model` VALUES ('All/21ULTRA_SANSUI.jpg', 'Rs. 7790', 'Rs. 7290', 'Rs. 400', '6 months', 'Rs.1215 for 6 months', '6 days', 'SANSUI', 'TV', '21ULTRA_SANSUI', '');
+INSERT INTO `all_model` VALUES ('All/29PT5607.jpg', 'Rs. 12990', 'Rs. 11790', 'Rs. 1200', '12 months', 'Rs.1965 for 6 months', '6 days', 'PHILIPS', 'TV', '29PT5607', '');
+INSERT INTO `all_model` VALUES ('All/FTV250W1.jpg', 'Rs. 9000', 'Rs. 8000', 'Rs. 1000', '6 months', 'Rs.1333 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV250W1', '');
+INSERT INTO `all_model` VALUES ('All/29FCTV.jpg', 'Rs. 10690', 'Rs. 10200', 'Rs. 490', '1 Year', 'Rs.1700 for 6 months', '6 days', 'AKAI', 'TV', '29FCTV', '');
+INSERT INTO `all_model` VALUES ('All/FTV500W.jpg', 'Rs. 12000', 'Rs. 11000', 'Rs. 1000', '6 months', 'Rs.1833 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV500W', '');
+INSERT INTO `all_model` VALUES ('All/SAN14CTV.jpg', 'Rs. 4190', 'Rs. 3950', 'Rs. 240', '6 months', 'Rs.658 for 6 months', '6 days', 'SANSUI', 'TV', 'SAN14CTV', '');
+INSERT INTO `all_model` VALUES ('All/FTV300W.jpg', 'Rs. 9900', 'Rs. 8500', 'Rs. 1400', '6 months', 'Rs.1417 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV300W', '');
+INSERT INTO `all_model` VALUES ('All/21PT5027.jpg', 'Rs. 7900', 'Rs. 6900', 'Rs. 1000', '6 months', 'Rs.1150 for 6 months', '6 days', 'PHILIPS', 'TV', '21PT5027', '');
+INSERT INTO `all_model` VALUES ('All/AAN14MSP.jpg', 'Rs. 3990', 'Rs. 3750', 'Rs. 240', '6 months', 'Rs.625 for 6 months', '6 days', 'AKAI', 'TV', 'AAN14MSP', '');
+INSERT INTO `all_model` VALUES ('All/SOF15EBP.jpg', 'Rs. 5790', 'Rs. 5425', 'Rs. 365', '6 months', 'Rs.904 for 6 months', '6 days', 'SANSUI', 'TV', 'SOF15EBP', '');
+INSERT INTO `all_model` VALUES ('All/VBS21SBR.jpg', 'Rs. 7990', 'Rs. 7390', 'Rs. 600', '6 months', 'Rs.1232 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBS21SBR', '');
+INSERT INTO `all_model` VALUES ('All/VBS21SDR.jpg', 'Rs. 8190', 'Rs. 7500', 'Rs. 690', '6 months', 'Rs.1250 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBS21SDR', '');
+INSERT INTO `all_model` VALUES ('All/VBF15SDV.jpg', 'Rs. 5790', 'Rs. 5460', 'Rs. 330', '6 months', 'Rs.910 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF15SDV', '');
+INSERT INTO `all_model` VALUES ('All/FTV350W3.jpg', 'Rs. 11000', 'Rs. 10000', 'Rs. 1000', '6 months', 'Rs. 1667 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV350W3', '');
+INSERT INTO `all_model` VALUES ('All/29PT5507.jpg', 'Rs. 12990', 'Rs. 11790', 'Rs. 1200', '6 months', 'Rs. 1965 for 6 months', '6 days', 'PHILIPS', 'TV', '29PT5507', '');
+INSERT INTO `all_model` VALUES ('All/AAF21EDV.jpg', 'Rs. 6590', 'Rs. 6190', 'Rs. 400', '6 months', 'Rs. 1032 for 6 months', '6 days', 'AKAI', 'TV', 'AAF21EDV', '');
+INSERT INTO `all_model` VALUES ('All/VCS21SSR.jpg', 'Rs. 8490', 'Rs. 7600', 'Rs. 890', '6 months', 'Rs. 1267 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VCS21SSR', '');
+INSERT INTO `all_model` VALUES ('All/VBF29WDH.jpg', 'Rs. 13590', 'Rs. 12850', 'Rs. 740', '6 months', 'Rs. 2142 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF29WDH', '');
+INSERT INTO `all_model` VALUES ('All/SCS21SDR.jpg', 'Rs. 7990', 'Rs. 7390', 'Rs. 600', '6 months', 'Rs. 1232 for 6 months', '6 days', 'SANSUI', 'TV', 'SCS21SDR', '');
+INSERT INTO `all_model` VALUES ('All/VCN14MSP.jpg', 'Rs. 4190', 'Rs. 3950', 'Rs. 240', '6 months', 'Rs. 658 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VCN14MSP', '');
+INSERT INTO `all_model` VALUES ('All/VCN20EGP.jpg', 'Rs. 5890', 'Rs. 5475', 'Rs. 415', '6 months', 'Rs. 913 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VCN20EGP', '');
+INSERT INTO `all_model` VALUES ('All/VBF15MOV.jpg', 'Rs. 5490', 'Rs. 5175', 'Rs. 315', '6 months', 'Rs. 863 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF15MOV', '');
+INSERT INTO `all_model` VALUES ('All/FTV350W.jpg', 'Rs. 19500', 'Rs. 18000', 'Rs. 1500', '6 months', 'Rs. 3000 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV350W', '');
+INSERT INTO `all_model` VALUES ('All/FTV350W1.jpg', 'Rs. 19500', 'Rs. 18000', 'Rs. 1500', '6 months', 'Rs. 3000 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV350W1', '');
+INSERT INTO `all_model` VALUES ('All/FTV350W2.jpg', 'Rs. 17000', 'Rs. 15000', 'Rs. 2000', '6 months', 'Rs. 2500 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV350W2', '');
+INSERT INTO `all_model` VALUES ('All/FTV250W.jpg', 'Rs. 18500', 'Rs. 16000', 'Rs. 2500', '6 months', 'Rs. 2667 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV250W', '');
+INSERT INTO `all_model` VALUES ('All/FTV350W4.jpg', 'Rs. 11000', 'Rs. 10000', 'Rs. 1000', '6 months', 'Rs. 1667 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV350W4', '');
+INSERT INTO `all_model` VALUES ('All/FTV300W1.jpg', 'Rs. 9500', 'Rs. 8200', 'Rs. 1300', '6 months', 'Rs. 1367 for 6 months', '6 days', 'SAMSUNG', 'TV', 'FTV300W1', '');
+INSERT INTO `all_model` VALUES ('All/21PT2217B.jpg', 'Rs. 7290', 'Rs. 6500', 'Rs. 790', '6 months', 'Rs. 1083 for 6 months', '6 days', 'PHILIPS', 'TV', '21PT2217B', '');
+INSERT INTO `all_model` VALUES ('All/VBF21GDV.jpg', 'Rs. 8590', 'Rs. 8100', 'Rs. 490', '6 months', 'Rs. 1350 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF21GDV', '');
+INSERT INTO `all_model` VALUES ('All/ACF21WDW.jpg', 'Rs. 8890', 'Rs. 7586', 'Rs. 1304', '6 months', 'Rs. 1264 for 6 months', '6 days', 'AKAI', 'TV', 'ACF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/VAF29GDJ.jpg', 'Rs. 12090', 'Rs. 11150', 'Rs. 940', '6 months', 'Rs. 1858 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VAF29GDJ', '');
+INSERT INTO `all_model` VALUES ('All/ABF21SDV.jpg', 'Rs. 7290', 'Rs. 7050', 'Rs. 240', '6 months', 'Rs. 1175 for 6 months', '6 days', 'AKAI', 'TV', 'ABF21SDV', '');
+INSERT INTO `all_model` VALUES ('All/AAF21EDP.jpg', 'Rs. 4990', 'Rs. 4675', 'Rs. 315', '6 months', 'Rs. 779 for 6 months', '6 days', 'AKAI', 'TV', 'AAF21EDP', '');
+INSERT INTO `all_model` VALUES ('All/AAN20ESP.jpg', 'Rs. 5390', 'Rs. 5057', 'Rs. 333', '6 months', 'Rs. 846 for 6 months', '6 days', 'AKAI', 'TV', 'AAN20ESP', '');
+INSERT INTO `all_model` VALUES ('All/ABN20ESP.jpg', 'Rs. 5590', 'Rs. 5275', 'Rs. 315', '6 months', 'Rs. 879 for 6 months', '6 days', 'AKAI', 'TV', 'ABN20ESP', '');
+INSERT INTO `all_model` VALUES ('All/ABN14MSP.jpg', 'Rs. 3890', 'Rs. 3750', 'Rs. 140', '6 months', 'Rs. 625 for 6 months', '6 days', 'AKAI', 'TV', 'ABN14MSP', '');
+INSERT INTO `all_model` VALUES ('All/SAF21EDV.jpg', 'Rs. 7490', 'Rs. 7090', 'Rs. 400', '6 months', 'Rs. 1182 for 6 months', '6 days', 'SANSUI', 'TV', 'SAF21EDV', '');
+INSERT INTO `all_model` VALUES ('All/SIF21ssv.jpg', 'Rs. 7890', 'Rs. 7490', 'Rs. 400', '6 months', 'Rs. 1775 for 6 months', '6 days', 'SANSUI', 'TV', 'SIF21ssv', '');
+INSERT INTO `all_model` VALUES ('All/SEF21EDV.jpg', 'Rs. 7590', 'Rs. 7250', 'Rs. 340', '6 months', 'Rs. 1208 for 6 months', '6 days', 'SANSUI', 'TV', 'SEF21EDV', '');
+INSERT INTO `all_model` VALUES ('All/SGF21SDV.jpg', 'Rs. 7790', 'Rs. 7450', 'Rs. 340', '6 months', 'Rs. 1242 for 6 months', '6 days', 'SANSUI', 'TV', 'SGF21SDV', '');
+INSERT INTO `all_model` VALUES ('All/SKF21EDV.jpg', 'Rs. 7690', 'Rs. 7390', 'Rs. 300', '6 months', 'Rs. 1232 for 6 months', '6 days', 'SANSUI', 'TV', 'SKF21EDV', '');
+INSERT INTO `all_model` VALUES ('All/SFF21WDW.jpg', 'Rs. 11090', 'Rs. 10650', 'Rs. 440', '6 months', 'Rs. 1775 for 6 months', '6 days', 'SANSUI', 'TV', 'SFF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/SDF21WDW.jpg', 'Rs. 10590', 'Rs. 10125', 'Rs. 465', '6 months', 'Rs. 1688 for 6 months', '6 days', 'SANSUI', 'TV', 'SDF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/SCN20ESP.jpg', 'Rs. 5890', 'Rs. 5090', 'Rs. 800', '6 months', 'Rs. 913 for 6 months', '6 days', 'SANSUI', 'TV', 'SCN20ESP', '');
+INSERT INTO `all_model` VALUES ('All/SGF21WDW.jpg', 'Rs. 9890', 'Rs. 9525', 'Rs. 365', '6 months', 'Rs. 1588 for 6 months', '6 days', 'SANSUI', 'TV', 'SGF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/SKF21WDW.jpg', 'Rs. 10090', 'Rs. 9725', 'Rs. 365', '6 months', 'Rs. 1621 for 6 months', '6 days', 'SANSUI', 'TV', 'SKF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/SAF15EDP.jpg', 'Rs. 5690', 'Rs. 5475', 'Rs. 215', '6 months', 'Rs. 913 for 6 months', '6 days', 'SANSUI', 'TV', 'SAF15EDP', '');
+INSERT INTO `all_model` VALUES ('All/SBF15MGP.jpg', 'Rs. 5090', 'Rs. 4825', 'Rs. 265', '6 months', 'Rs. 804 for 6 months', '6 days', 'SANSUI', 'TV', 'SBF15MGP', '');
+INSERT INTO `all_model` VALUES ('All/SCF21WDW.jpg', 'Rs. 10290', 'Rs. 9825', 'Rs. 415', '6 months', 'Rs. 1638 for 6 months', '6 days', 'SANSUI', 'TV', 'SCF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/VBF21EOV.jpg', 'Rs. 7290', 'Rs. 6890', 'Rs. 400', '6 months', 'Rs. 1148 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF21EOV', '');
+INSERT INTO `all_model` VALUES ('All/VBF21GDV5.jpg', 'Rs. 8590', 'Rs. 8100', 'Rs. 490', '6 months', 'Rs. 1350 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF21GDV5', '');
+INSERT INTO `all_model` VALUES ('All/VNF21SBV.jpg', 'Rs. 7690', 'Rs. 7390', 'Rs. 300', '6 months', 'Rs. 1232 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VNF21SBV', '');
+INSERT INTO `all_model` VALUES ('All/VBF21SDV.jpg', 'Rs. 7990', 'Rs. 7600', 'Rs. 390', '6 months', 'Rs. 1267 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF21SDV', '');
+INSERT INTO `all_model` VALUES ('All/VMF21EOV.jpg', 'Rs. 7290', 'Rs. 6890', 'Rs. 400', '6 months', 'Rs. 1148 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VMF21EOV', '');
+INSERT INTO `all_model` VALUES ('All/VBF21WDW.jpg', 'Rs. 9790', 'Rs. 9325', 'Rs. 465', '6 months', 'Rs. 1554 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VBF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/VLF21SBV.jpg', 'Rs. 8090', 'Rs. 7700', 'Rs. 390', '6 months', 'Rs. 1283 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VLF21SBV', '');
+INSERT INTO `all_model` VALUES ('All/VFF21WSW.jpg', 'Rs. 9590', 'Rs. 9125', 'Rs. 465', '6 months', 'Rs. 1521 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VFF21WSW', '');
+INSERT INTO `all_model` VALUES ('All/SJF21WDW.jpg', 'Rs. 9490', 'Rs. 9025', 'Rs. 465', '6 months', 'Rs. 1504 for 6 months', '6 days', 'SANSUI', 'TV', 'SJF21WDW', '');
+INSERT INTO `all_model` VALUES ('All/VFF21WBW.jpg', 'Rs. 9090', 'Rs. 8725', 'Rs. 365', '6 months', 'Rs. 1454 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VFF21WBW', '');
+INSERT INTO `all_model` VALUES ('All/SCS21SGR.jpg', 'Rs. 8190', 'Rs. 7500', 'Rs. 690', '6 months', 'Rs. 1250 for 6 months', '6 days', 'SANSUI', 'TV', 'SCS21SGR', '');
+INSERT INTO `all_model` VALUES ('All/VLF21WBW.jpg', 'Rs. 10090', 'Rs. 9325', 'Rs. 765', '6 months', 'Rs. 1554 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VLF21WBW', '');
+INSERT INTO `all_model` VALUES ('All/VCS21SBR.jpg', 'Rs. 7890', 'Rs. 7600', 'Rs. 290', '6 months', 'Rs. 1267 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VCS21SBR', '');
+INSERT INTO `all_model` VALUES ('All/SDS21SBR.jpg', 'Rs. 7890', 'Rs. 7290', 'Rs. 600', '6 months', 'Rs. 1215 for 6 months', '6 days', 'SANSUI', 'TV', 'SDS21SBR', '');
+INSERT INTO `all_model` VALUES ('All/SDS21SDR.jpg', 'Rs. 8090', 'Rs. 7390', 'Rs. 700', '6 months', 'Rs. 1232 for 6 months', '6 days', 'SANSUI', 'TV', 'SDS21SDR', '');
+INSERT INTO `all_model` VALUES ('All/SDS21SGR.jpg', 'Rs. 8090', 'Rs. 7500', 'Rs. 590', '6 months', 'Rs. 1250 for 6 months', '6 days', 'SANSUI', 'TV', 'SDS21SGR', '');
+INSERT INTO `all_model` VALUES ('All/SAF21SDJ.jpg', 'Rs. 10790', 'Rs. 10450', 'Rs. 340', '6 months', 'Rs. 1742 for 6 months', '6 days', 'SANSUI', 'TV', 'SAF21SDJ', '');
+INSERT INTO `all_model` VALUES ('All/SCF29SDJ.jpg', 'Rs. 11290', 'Rs. 10950', 'Rs. 340', '6 months', 'Rs. 1825 for 6 months', '6 days', 'SANSUI', 'TV', 'SCF29SDJ', '');
+INSERT INTO `all_model` VALUES ('All/VAF21ESV.jpg', 'Rs. 6890', 'Rs. 6575', 'Rs. 315', '6 months', 'Rs. 1096 for 6 months', '6 days', 'VIDEOCON', 'TV', 'VAF21ESV', '');
+INSERT INTO `all_model` VALUES ('All/SJF29SDJ.jpg', 'Rs. 10890', 'Rs. 10550', 'Rs. 340', '6 months', 'Rs. 1758 for 6 months', '6 days', 'SANSUI', 'TV', 'SJF29SDJ', '');
+INSERT INTO `all_model` VALUES ('All/KLV-19T400A.jpg', 'Rs. 16900', 'Rs. 16590', 'Rs. 310', '6 months', 'Rs. 2765 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-19T400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-26S400A.jpg', 'Rs. 32900', 'Rs. 27995', 'Rs. 4905', '6 months', 'Rs. 4666 for 6 months', '6 days', 'SONY', 'LCD', 'KLV-26S400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-19T400W.jpg', 'Rs. 18900', 'Rs. 18900', 'Rs. 0', '6 months', 'Rs. 3150 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-19T400W', '');
+INSERT INTO `all_model` VALUES ('All/KLV-32V550AB.jpg', 'Rs. 45900', 'Rs. 45900', 'Rs. 0', '6 months', 'Rs. 7650 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-32V550AB', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40V550A.jpg', 'Rs. 81900', 'Rs. 71990', 'Rs. 9910', '6 months', 'Rs. 11998 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-40V550A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-19T400G.jpg', 'Rs. 17900', 'Rs. 17795', 'Rs. 105', '6 months', 'Rs. 2966 for 6 months', '6 days', 'SONY Braia', 'LCD', 'KLV-19T400G', '');
+INSERT INTO `all_model` VALUES ('All/LA26A450.jpg', 'Rs. 19000', 'Rs. 15550', 'Rs. 3450', '6 months', 'Rs. 2583 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA26A450', '');
+INSERT INTO `all_model` VALUES ('All/KLV-37S400A.jpg', 'Rs. 60900', 'Rs. 54900', 'Rs. 6000', '6 months', 'Rs. 9150 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-37S400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-46W400A.jpg', 'Rs. 113900', 'Rs. 112990', 'Rs. 910', '6 months', 'Rs. 18832 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-46W400A', '');
+INSERT INTO `all_model` VALUES ('All/LA40A330.jpg', 'Rs. 39900', 'Rs. 37000', 'Rs. 2900', '6 months', 'Rs. 6167 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA40A330', '');
+INSERT INTO `all_model` VALUES ('All/KLV-26S550A.jpg', 'Rs. 34900', 'Rs. 28990', 'Rs. 5910', '6 months', 'Rs. 4832 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-26S550A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-19T400AB.jpg', 'Rs. 16900', 'Rs. 16600', 'Rs. 300', '6 months', 'Rs. 2767 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-19T400AB', '');
+INSERT INTO `all_model` VALUES ('All/KLV-26T400A.jpg', 'Rs. 27900', 'Rs. 27900', 'Rs. 0', '6 months', 'Rs. 4650 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-26T400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40W400A.jpg', 'Rs. 93900', 'Rs. 88990', 'Rs. 4910', '6 months', 'Rs. 14832 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-40W400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-26S400AHD.jpg', 'Rs. 32900', 'Rs. 27995', 'Rs. 4905', '6 months', 'Rs. 4666 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-26S400AHD', '');
+INSERT INTO `all_model` VALUES ('All/LA32A550P1.jpg', 'Rs. 48000', 'Rs. 43800', 'Rs. 4200', '6 months', 'Rs. 7300 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA32A550P1', '');
+INSERT INTO `all_model` VALUES ('All/KLV-26T400G.jpg', 'Rs. 28900', 'Rs. 28795', 'Rs. 105', '6 months', 'Rs. 4779 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-26T400G', '');
+INSERT INTO `all_model` VALUES ('All/LA70F9.jpg', 'Rs. 2400000', 'Rs. 2200000', 'Rs. 200000', '6 months', 'Rs. 366667 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA70F9', '');
+INSERT INTO `all_model` VALUES ('All/LA32A650.jpg', 'Rs. 74000', 'Rs. 69000', 'Rs. 5000', '6 months', 'Rs. 11500 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA32A650', '');
+INSERT INTO `all_model` VALUES ('All/KLV-32W400A.jpg', 'Rs. 55900', 'Rs. 51990', 'Rs. 3910', '6 months', 'Rs. 8665 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-32W400A', '');
+INSERT INTO `all_model` VALUES ('All/LA26A450C1.jpg', 'Rs. 25995', 'Rs. 25995', 'Rs. 0', '6 months', 'Rs. 4333 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA26A450C1', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40V400A.jpg', 'Rs. 78900', 'Rs. 73990', 'Rs. 4910', '6 months', 'Rs. 12332 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-40V400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-46X300A.jpg', 'Rs. 158900', 'Rs. 153990', 'Rs. 4910', '6 months', 'Rs. 25665 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-46X300A', '');
+INSERT INTO `all_model` VALUES ('All/LA26A450C1HD.jpg', 'Rs. 29000', 'Rs. 24499', 'Rs. 4501', '6 months', 'Rs. 4083 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA26A450C1HD', '');
+INSERT INTO `all_model` VALUES ('All/LA40A550.jpg', 'Rs. 74000', 'Rs. 67000', 'Rs. 7000', '6 months', 'Rs. 11167 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA40A550', '');
+INSERT INTO `all_model` VALUES ('All/KLV-20S400A.jpg', 'Rs. 22900', 'Rs. 18990', 'Rs. 3910', '6 months', 'Rs. 3165 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-20S400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-32V550A.jpg', 'Rs. 52900', 'Rs. 42990', 'Rs. 9910', '6 months', 'Rs. 7165 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-32V550A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-46V550A.jpg', 'Rs. 103900', 'Rs. 102990', 'Rs. 910', '6 months', 'Rs. 17165 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-46V550A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40S550A.jpg', 'Rs. 71900', 'Rs. 61990', 'Rs. 9910', '6 months', 'Rs. 10332 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-40S550A', '');
+INSERT INTO `all_model` VALUES ('All/UA46B6000VR.jpg', 'Rs. 150000', 'Rs. 118500', 'Rs. 31500', '6 months', 'Rs. 19750 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'UA46B6000VR', '');
+INSERT INTO `all_model` VALUES ('All/UA40B6000VR.jpg', 'Rs. 125000', 'Rs. 95000', 'Rs. 30000', '6 months', 'Rs. 15833 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'UA40B6000VR', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40W300A.jpg', 'Rs. 103900', 'Rs. 99990', 'Rs. 3910', '6 months', 'Rs. 16665 for 6 months', '6 days', 'SONY', 'LCD', 'KLV-40W300A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40X300A.jpg', 'Rs. 124900', 'Rs. 119900', 'Rs. 5000', '6 months', 'Rs. 19983 for 6 months', '6 days', 'SONY', 'LCD', 'KLV-40X300A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40X350A.jpg', 'Rs. 133900', 'Rs. 126990', 'Rs. 6910', '6 months', 'Rs. 21165 for 6 months', '6 days', 'SONY', 'LCD', 'KLV-40X350A', '');
+INSERT INTO `all_model` VALUES ('All/LA52A650.jpg', 'Rs. 300000', 'Rs. 280000', 'Rs. 20000', '6 months', 'Rs. 46667 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA52A650', '');
+INSERT INTO `all_model` VALUES ('All/LA46A650.jpg', 'Rs. 200000', 'Rs. 180000', 'Rs. 20000', '6 months', 'Rs. 30000 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA46A650', '');
+INSERT INTO `all_model` VALUES ('All/LA40A650.jpg', 'Rs. 150000', 'Rs. 140000', 'Rs. 10000', '6 months', 'Rs. 23333 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA40A650', '');
+INSERT INTO `all_model` VALUES ('All/KLV-46X350A.jpg', 'Rs. 203900', 'Rs. 199900', 'Rs. 4000', '6 months', 'Rs. 33317 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-46X350A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40S400A.jpg', 'Rs. 71900', 'Rs. 68990', 'Rs. 2910', '6 months', 'Rs. 11498 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-40S400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-52W400A.jpg', 'Rs. 199900', 'Rs. 195990', 'Rs. 3910', '6 months', 'Rs. 32665 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-52W400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-37S400A_2.jpg', 'Rs. 60900', 'Rs. 54900', 'Rs. 6000', '6 months', 'Rs. 9150 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-37S400A_2', '');
+INSERT INTO `all_model` VALUES ('All/KLV-52X350A.jpg', 'Rs. 309900', 'Rs. 289990', 'Rs. 19910', '6 months', 'Rs. 16332 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-52X350A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-46V400A.jpg', 'Rs. 103900', 'Rs. 97990', 'Rs. 5910', '6 months', 'Rs. 16332 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-46V400A', '');
+INSERT INTO `all_model` VALUES ('All/LA40A450C1.jpg', 'Rs. 79995', 'Rs. 79995', 'Rs. 0', '6 months', 'Rs. 13333 for 6 months', '6 days', 'SAMSUNG', 'LCD', 'LA40A450C1', '');
+INSERT INTO `all_model` VALUES ('All/KLV-37S400A_HD.jpg', 'Rs. 60900', 'Rs. 54900', 'Rs. 6000', '6 months', 'Rs. 9150 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-37S400A_HD', '');
+INSERT INTO `all_model` VALUES ('All/KLV-32T400A.jpg', 'Rs. 37900', 'Rs. 34990', 'Rs. 2910', '6 months', 'Rs. 5832 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-32T400A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-20S400A_LCD.jpg', 'Rs. 22900', 'Rs. 18990', 'Rs. 3910', '6 months', 'Rs. 3165 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-20S400A_LCD', '');
+INSERT INTO `all_model` VALUES ('All/KDL-70X3500.jpg', 'Rs. 2000000', 'Rs. 1975000', 'Rs. 25000', '6 months', 'Rs. 329167 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KDL-70X3500', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40W450A.jpg', 'Rs. 113900', 'Rs. 112990', 'Rs. 1000', '6 months', 'Rs. 18832 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-40W450A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-40Z450A.jpg', 'Rs. 183900', 'Rs. 139990', 'Rs. 43910', '6 months', 'Rs. 23332 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-40Z450A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-46Z450A.jpg', 'Rs. 243900', 'Rs. 235990', 'Rs. 7910', '6 months', 'Rs. 39332 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-46Z450A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-52Z450A.jpg', 'Rs. 349900', 'Rs. 329900', 'Rs. 20000', '6 months', 'Rs. 54983 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-52Z450A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-55X450A.jpg', 'Rs. 399900', 'Rs. 395990', 'Rs. 3910', '6 months', 'Rs. 65998 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-55X450A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-32S550A.jpg', 'Rs. 42900', 'Rs. 35990', 'Rs. 6910', '6 months', 'Rs. 5998 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-32S550A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-37S550A.jpg', 'Rs. 66900', 'Rs. 59990', 'Rs. 6910', '6 months', 'Rs. 9998 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-37S550A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-37S550A.jpg', 'Rs. 71900', 'Rs. 67900', 'Rs. 4000', '6 months', 'Rs. 11317 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-37S550A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-46W450A.jpg', 'Rs. 133900', 'Rs. 132990', 'Rs. 910', '6 months', 'Rs. 22165 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-46W450A', '');
+INSERT INTO `all_model` VALUES ('All/KLV-52W450A.jpg', 'Rs. 259900', 'Rs. 249900', 'Rs. 10000', '6 months', 'Rs. 41665 for 6 months', '6 days', 'SONY Bravia', 'LCD', 'KLV-52W450A', '');
+INSERT INTO `all_model` VALUES ('All/SAL26HBG.jpg', 'Rs. 25490', 'Rs. 21490', 'Rs. 4000', '6 months', 'Rs. 3582 for 6 months', '6 days', 'SANSUI', 'LCD', 'SAL26HBG', '');
+INSERT INTO `all_model` VALUES ('All/SEL26HBG.jpg', 'Rs. 26990', 'Rs. 21990', 'Rs. 5000', '6 months', 'Rs. 3565 for 6 months', '6 days', 'SANSUI', 'LCD', 'SEL26HBG', '');
+INSERT INTO `all_model` VALUES ('All/SEL32HBG.jpg', 'Rs. 34990', 'Rs. 29990', 'Rs. 5000', '6 months', 'Rs. 4998 for 6 months', '6 days', 'SANSUI', 'LCD', 'SEL32HBG', '');
+INSERT INTO `all_model` VALUES ('All/VBL26HBG.jpg', 'Rs. 24990', 'Rs. 21990', 'Rs. 3000', '6 months', 'Rs. 3665 for 6 months', '6 days', 'VIDEOCON', 'LCD', 'VBL26HBG', '');
+INSERT INTO `all_model` VALUES ('All/VDL68GMZ-WSA.jpg', 'Rs. 8290', 'Rs. 7443', 'Rs. 847', '2 Year', 'Rs. 1241 for 6 months', '6 days', 'VIDEOCON', 'Washing Machine', 'VDL68GMZ-WSA', '');
+INSERT INTO `all_model` VALUES ('All/KLB68GMZ-WSA.jpg', 'Rs. 7690', 'Rs. 6741', 'Rs. 949', '2 Year', 'Rs. 1124 for 6 months', '6 days', 'KELVINATOR', 'Washing Machine', 'KLB68GMZ-WSA', '');
+INSERT INTO `all_model` VALUES ('All/KMA68GPW-WSK.jpg', 'Rs. 8290', 'Rs. 7281', 'Rs. 1009', '2 Year', 'Rs. 1214 for 6 months', '6 days', 'KELVINATOR', 'Washing Machine', 'KMA68GPW-WSK', '');
+INSERT INTO `all_model` VALUES ('All/NLA60GMC-WSU.jpg', 'Rs. 6990', 'Rs. 6111', 'Rs. 879', '2 Year', 'Rs. 1019 for 6 months', '6 days', 'KENSTAR', 'Washing Machine', 'NLA60GMC-WSU', '');
+INSERT INTO `all_model` VALUES ('All/NWA65GDZ-WSA.jpg', 'Rs. 7490', 'Rs. 6561', 'Rs. 929', '2 Year', 'Rs. 1094 for 6 months', '6 days', 'KENSTAR', 'Washing Machine', 'NWA65GDZ-WSA', '');
+INSERT INTO `all_model` VALUES ('All/NLB68GMZ-WSA.jpg', 'Rs. 7690', 'Rs. 6741', 'Rs. 949', '2 Year', 'Rs. 1124 for 6 months', '6 days', 'KENSTAR', 'Washing Machine', 'NLB68GMZ-WSA', '');
+INSERT INTO `all_model` VALUES ('All/NMA68GPW-WSK.jpg', 'Rs. 8290', 'Rs. 7281', 'Rs. 1009', '2 Year', 'Rs. 1214 for 6 months', '6 days', 'KENSTAR', 'Washing Machine', 'NMA68GPW-WSK', '');
+INSERT INTO `all_model` VALUES ('All/VAQ60GMW-WSU.jpg', 'Rs. 6690', 'Rs. 6100', 'Rs. 590', '2 Year', 'Rs. 1017 for 6 months', '6 days', 'VIDEOCON', 'Washing Machine', 'VAQ60GMW-WSU', '');
+INSERT INTO `all_model` VALUES ('All/VPA60PMC-WSU.jpg', 'Rs. 7190', 'Rs. 6431', 'Rs. 759', '2 Year', 'Rs. 1072 for 6 months', '6 days', 'VIDEOCON', 'Washing Machine', 'VPA60PMC-WSU', '');
+INSERT INTO `all_model` VALUES ('All/VDL68PMZ-WSA.jpg', 'Rs. 8290', 'Rs. 7443', 'Rs. 847', '2 Year', 'Rs. 1241 for 6 months', '6 days', 'VIDEOCON', 'Washing Machine', 'VDL68PMZ-WSA', '');
+INSERT INTO `all_model` VALUES ('All/VDL68EMZ-WSA.jpg', 'Rs. 8290', 'Rs. 7443', 'Rs. 847', '2 Year', 'Rs. 1241 for 6 months', '6 days', 'VIDEOCON', 'Washing Machine', 'VDL68EMZ-WSA', '');
+INSERT INTO `all_model` VALUES ('All/KLA60GMC-WSU.jpg', 'Rs. 6990', 'Rs. 6111', 'Rs. 879', '2 Year', 'Rs. 1019 for 6 months', '6 days', 'KELVINATOR', 'Washing Machine', 'KLA60GMC-WSU', '');
+INSERT INTO `all_model` VALUES ('All/KWA65GDZ-WSA.jpg', 'Rs. 7490', 'Rs. 6561', 'Rs. 929', '2 Year', 'Rs. 1094 for 6 months', '6 days', 'KELVINATOR', 'Washing Machine', 'KWA65GDZ-WSA', '');
+INSERT INTO `all_model` VALUES ('All/WhiteMagic-1-2-3-650P.jpg', 'Rs. 12900', 'Rs. 11990', 'Rs. 910', '2 Year', 'Rs. 1094 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'WhiteMagic-1-2-3-650P', '');
+INSERT INTO `all_model` VALUES ('All/WhiteMagicPro-700h.jpg', 'Rs. 18000', 'Rs. 16790', 'Rs. 1210', '2 Year', 'Rs. 2798 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'WhiteMagicPro-700h', '');
+INSERT INTO `all_model` VALUES ('All/WhiteMagicPro-700S.jpg', 'Rs. 17000', 'Rs. 15790', 'Rs. 1210', '2 Year', 'Rs. 2632 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'WhiteMagicPro-700S', '');
+INSERT INTO `all_model` VALUES ('All/WhiteMagicProXL-800H.jpg', 'Rs. 20500', 'Rs. 18490', 'Rs. 2010', '2 Year', 'Rs. 3082 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'WhiteMagicProXL-800H', '');
+INSERT INTO `all_model` VALUES ('All/WhiteMagicProXL-800S.jpg', 'Rs. 19500', 'Rs. 17490', 'Rs. 2010', '2 Year', 'Rs. 2915 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'WhiteMagicProXL-800S', '');
+INSERT INTO `all_model` VALUES ('All/WA88TPBEH.jpg', 'Rs. 17990', 'Rs. 15990', 'Rs. 2000', '2 Year', 'Rs. 2665 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WA88TPBEH', '');
+INSERT INTO `all_model` VALUES ('All/WA88TPKEH.jpg', 'Rs. 16990', 'Rs. 14990', 'Rs. 2000', '2 Year', 'Rs. 2498 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WA88TPKEH', '');
+INSERT INTO `all_model` VALUES ('All/WA85TPLEC.jpg', 'Rs. 14990', 'Rs. 13790', 'Rs. 1200', '2 Year', 'Rs. 2298 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WA85TPLEC', '');
+INSERT INTO `all_model` VALUES ('All/WA82TANEC.jpg', 'Rs. 14990', 'Rs. 13790', 'Rs. 1200', '2 Year', 'Rs. 2298 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WA82TANEC', '');
+INSERT INTO `all_model` VALUES ('All/WA80TALEC.jpg', 'Rs. 13990', 'Rs. 12790', 'Rs. 1200', '2 Year', 'Rs. 2132 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WA80TALEC', '');
+INSERT INTO `all_model` VALUES ('All/WA82TALEC.jpg', 'Rs. 13490', 'Rs. 12490', 'Rs. 1000', '2 Year', 'Rs. 2082 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WA82TALEC', '');
+INSERT INTO `all_model` VALUES ('All/WD7652C8W.jpg', 'Rs. 36900', 'Rs. 34900', 'Rs. 2000', '2 Year', 'Rs. 5817 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WD7652C8W', '');
+INSERT INTO `all_model` VALUES ('All/WF7652S8R.jpg', 'Rs. 31900', 'Rs. 29900', 'Rs. 2000', '2 Year', 'Rs. 4983 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WF7652S8R', '');
+INSERT INTO `all_model` VALUES ('All/WF7650S9M.jpg', 'Rs. 27900', 'Rs. 25900', 'Rs. 2000', '2 Year', 'Rs. 4317 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WF7650S9M', '');
+INSERT INTO `all_model` VALUES ('All/WF-B1061EW.jpg', 'Rs. 24900', 'Rs. 22900', 'Rs. 2000', '2 Year', 'Rs. 3817 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WF-B1061EW', '');
+INSERT INTO `all_model` VALUES ('All/WF6550S7W.jpg', 'Rs. 23900', 'Rs. 21900', 'Rs. 2000', '2 Year', 'Rs. 3650 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WF6550S7W', '');
+INSERT INTO `all_model` VALUES ('All/WF-R1061EW.jpg', 'Rs. 21900', 'Rs. 19490', 'Rs. 2410', '2 Year', 'Rs. 3248 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WF-R1061EW', '');
+INSERT INTO `all_model` VALUES ('All/WF-F861EW.jpg', 'Rs. 18900', 'Rs. 17790', 'Rs. 1110', '2 Year', 'Rs. 2965 for 6 months', '6 days', 'SAMSUNG', 'Washing Machine', 'WF-F861EW', '');
+INSERT INTO `all_model` VALUES ('All/GWS-6201.jpg', 'Rs. 6790', 'Rs. 6590', 'Rs. 200', '2 Year', 'Rs. 1098 for 6 months', '6 days', 'GODREJ', 'Washing Machine', 'GWS-6201', '');
+INSERT INTO `all_model` VALUES ('All/600FX.jpg', 'Rs. 10700', 'Rs. 10250', 'Rs. 450', '2 Year', 'Rs. 1708 for 6 months', '6 days', 'GODREJ', 'Washing Machine', '600FX', '');
+INSERT INTO `all_model` VALUES ('All/GWF-620PX.jpg', 'Rs. 10990', 'Rs. 10550', 'Rs. 440', '2 Year', 'Rs. 1758 for 6 months', '6 days', 'GODREJ', 'Washing Machine', 'GWF-620PX', '');
+INSERT INTO `all_model` VALUES ('All/620fsDAC.jpg', 'Rs. 13890', 'Rs. 13200', 'Rs. 690', '2 Year', 'Rs. 2200 for 6 months', '6 days', 'GODREJ', 'Washing Machine', '620fsDAC', '');
+INSERT INTO `all_model` VALUES ('All/620FS.jpg', 'Rs. 7400', 'Rs. 7100', 'Rs. 300', '2 Year', 'Rs. 1183 for 6 months', '6 days', 'GODREJ', 'Washing Machine', '620FS', '');
+INSERT INTO `all_model` VALUES ('All/GWS-620-fs.jpg', 'Rs. 7290', 'Rs. 6925', 'Rs. 365', '2 Year', 'Rs. 1154 for 6 months', '6 days', 'GODREJ', 'Washing Machine', 'GWS-620-fs', '');
+INSERT INTO `all_model` VALUES ('All/SSAN652.jpg', 'Rs. 8190', 'Rs. 7790', 'Rs. 400', '2 Year', 'Rs. 1299 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'SSAN652', '');
+INSERT INTO `all_model` VALUES ('All/SSAN653.jpg', 'Rs. 8890', 'Rs. 8290', 'Rs. 600', '2 Year', 'Rs. 1382 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'SSAN653', '');
+INSERT INTO `all_model` VALUES ('All/H-70.jpg', 'Rs. 10790', 'Rs. 9900', 'Rs. 890', '2 Year', 'Rs. 1650 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'H-70', '');
+INSERT INTO `all_model` VALUES ('All/FSAN801.jpg', 'Rs. 20090', 'Rs. 18990', 'Rs. 1100', '2 Year', 'Rs. 3165 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'FSAN801', '');
+INSERT INTO `all_model` VALUES ('All/SSAN651.jpg', 'Rs. 8840', 'Rs. 7890', 'Rs. 950', '2 Year', 'Rs. 1315 for 6 months', '6 days', 'WHIRLPOOL', 'Washing Machine', 'SSAN651', '');
+INSERT INTO `all_model` VALUES ('All/1_5TONSplit.jpg', 'Rs. 25000', 'Rs. 22990', 'Rs. 2010', '2 Year', 'Rs. 3832 for 6 months', '6 days', 'WHIRLPOOL', 'Air Conditioner', '1_5TONSplit', '1.5 Ton Split AC Free Diamond Pendant worth RS. 4990');
+INSERT INTO `all_model` VALUES ('All/VKW21CE1.jpg', 'Rs. 11990', 'Rs. 10400', 'Rs. 1590', '2 Year', 'Rs. 1733 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VKW21CE1', 'Window AC 0.8 Ton 1 Star');
+INSERT INTO `all_model` VALUES ('All/VKW30CE1.jpg', 'Rs. 14490', 'Rs. 12900', 'Rs. 1590', '2 Year', 'Rs. 2150 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VKW30CE1', 'Window AC 1 Ton');
+INSERT INTO `all_model` VALUES ('All/VKW51CE1.jpg', 'Rs. 16490', 'Rs. 14400', 'Rs. 2090', '2 Year', 'Rs. 2400 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VKW51CE1', 'Window AC 1.5 Ton 1 Star');
+INSERT INTO `all_model` VALUES ('All/VKS22CE1.jpg', 'Rs. 15490', 'Rs. 13900', 'Rs. 1590', '2 Year', 'Rs. 2317 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VKS22CE1', 'Split AC 0.8 Ton 2 Star');
+INSERT INTO `all_model` VALUES ('All/VKS32CE1.jpg', 'Rs. 18490', 'Rs. 16400', 'Rs. 2090', '2 Year', 'Rs. 2733 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VKS32CE1', 'Split AC 1 Ton 2 Star');
+INSERT INTO `all_model` VALUES ('All/VZS32CE1.jpg', 'Rs. 18990', 'Rs. 16900', 'Rs. 2090', '2 Year', 'Rs. 2817 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VZS32CE1', 'Split AC 1 Ton 2 Star');
+INSERT INTO `all_model` VALUES ('All/VKS52CE1.jpg', 'Rs. 23590', 'Rs. 20900', 'Rs. 2690', '2 Year', 'Rs. 3483 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VKS52CE1', 'Split AC 1.5 Ton 2 Star');
+INSERT INTO `all_model` VALUES ('All/VKS61CE1.jpg', 'Rs. 30900', 'Rs. 26900', 'Rs. 4000', '2 Year', 'Rs. 4483 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VKS61CE1', 'Split AC 2 Ton 1 Star');
+INSERT INTO `all_model` VALUES ('All/VYS61GL1.jpg', 'Rs. 31990', 'Rs. 27900', 'Rs. 4090', '2 Year', 'Rs. 4650 for 6 months', '6 days', 'VIDEOCON', 'Air Conditioner', 'VYS61GL1', 'Split AC 2 Ton 1 Star');
+INSERT INTO `all_model` VALUES ('All/KFW20CE1.jpg', 'Rs. 11490', 'Rs. 9900', 'Rs. 1590', '2 Year', 'Rs. 1650 for 6 months', '6 days', 'KENSTAR', 'Air Conditioner', 'KFW20CE1', 'Window AC 0.8 TON');
+INSERT INTO `all_model` VALUES ('All/KFW60CE1.jpg', 'Rs. 20990', 'Rs. 18400', 'Rs. 2590', '2 Year', 'Rs. 3067 for 6 months', '6 days', 'KENSTAR', 'Air Conditioner', 'KFW60CE1', 'Window AC 2 TON');
+INSERT INTO `all_model` VALUES ('All/KUS22CE1.jpg', 'Rs. 14990', 'Rs. 12900', 'Rs. 2090', '2 Year', 'Rs. 2150 for 6 months', '6 days', 'KENSTAR', 'Air Conditioner', 'KUS22CE1', 'Split AC 0.8 TON 2 Star');
+INSERT INTO `all_model` VALUES ('All/GSH12F5.jpg', 'Rs. 29990', 'Rs. 29090', 'Rs. 900', '2 Year', 'Rs. 4848 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GSH12F5', '1 Ton Heating and Cooling Split AC With LCD Remote');
+INSERT INTO `all_model` VALUES ('All/GSH19F5.jpg', 'Rs. 45990', 'Rs. 45090', 'Rs. 900', '2 Year', 'Rs. 7515 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GSH19F5', '1.5 Ton split AC  Mirror Finish Flat Panel and With LCD Remote');
+INSERT INTO `all_model` VALUES ('All/GSC12M4C.jpg', 'Rs. 25990', 'Rs. 25590', 'Rs. 400', '2 Year', 'Rs. 4265 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GSC12M4C', '1.5 Ton Split AC, Mirror Finish Flat Panel and With LCD Remote');
+INSERT INTO `all_model` VALUES ('All/GSC-18.jpg', 'Rs. 33990', 'Rs. 33090', 'Rs. 900', '2 Year', 'Rs. 5515 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GSC-18', '1.5 Ton Split AC, Silver Finish Flat Panel and With LCD Remote');
+INSERT INTO `all_model` VALUES ('All/GSC-18_1.jpg', 'Rs. 31990', 'Rs. 32090', 'Rs. 900', '2 Year', 'Rs. 5348 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GSC-18_1', '1.5 Ton Split AC Silver Finish Flat Panel With LCD Remote');
+INSERT INTO `all_model` VALUES ('All/GWC-14G2.jpg', 'Rs. 15190', 'Rs. 14990', 'Rs. 200', '2 Year', 'Rs. 2498 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GWC-14G2', '1.2 Ton Window AC With LCD Remote');
+INSERT INTO `all_model` VALUES ('All/GSC18G1WHZ.jpg', 'Rs. 22990', 'Rs. 22690', 'Rs. 300', '2 Year', 'Rs. 3782 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GSC18G1WHZ', '1.5 Ton Split AC Silver Finish Flat Panel With LCD Remote');
+INSERT INTO `all_model` VALUES ('All/GSC12S4C.jpg', 'Rs. 24990', 'Rs. 24490', 'Rs. 500', '2 Year', 'Rs. 4082 for 6 months', '6 days', 'GODREJ', 'Air Conditioner', 'GSC12S4C', '1 Ton Split AC, Silver Finish Flat Panel with LCD Remote');
+INSERT INTO `all_model` VALUES ('All/08TWAC.jpg', 'Rs. 13025', 'Rs. 12575', 'Rs. 450', '2 Year', 'Rs. 2096 for 6 months', '6 days', 'WHIRLPOOL', 'Air Conditioner', '08TWAC', '0.8 Ton Window AC');
+INSERT INTO `all_model` VALUES ('All/1-Ton-SAC-Platinum.jpg', 'Rs. 23050', 'Rs. 21550', 'Rs. 1500', '2 Year', 'Rs. 3592 for 6 months', '6 days', 'WHIRLPOOL', 'Air Conditioner', '1-Ton-SAC-Platinum', '1 Ton Split AC-PLATINUM');
+INSERT INTO `all_model` VALUES ('All/15TWAC.jpg', 'Rs. 19500', 'Rs. 18990', 'Rs. 510', '2 Year', 'Rs. 3165 for 6 months', '6 days', 'WHIRLPOOL', 'Air Conditioner', '15TWAC', '1.5 Ton Window AC- ELITE, Free Diamond Pendant worth RS. 4990');
+INSERT INTO `all_model` VALUES ('All/2-Ton-SAC.jpg', 'Rs. 32000', 'Rs. 30330', 'Rs. 1670', '2 Year', 'Rs. 5055 for 6 months', '6 days', 'WHIRLPOOL', 'Air Conditioner', '2-Ton-SAC', '2 Ton Split AC');
+INSERT INTO `all_model` VALUES ('All/2-Ton-WAC.jpg', 'Rs. 24600', 'Rs. 23200', 'Rs. 1400', '2 Year', 'Rs. 3867 for 6 months', '6 days', 'WHIRLPOOL', 'Air Conditioner', '2-Ton-WAC', '2 Ton Window AC');
+INSERT INTO `all_model` VALUES ('All/AWT24ZKA.jpg', 'Rs. 21790', 'Rs. 20790', 'Rs. 1000', '2 Year', 'Rs. 3465 for 6 months', '6 days', 'SAMSUNG', 'Air Conditioner', 'AWT24ZKA', 'Window AC 2.0 Ton, Blue Accent-Grill, Bio Sleep, Energy Saver, Bio-Filter, UTR Compressor-Cooling at');
+INSERT INTO `all_model` VALUES ('All/AWT18WKE.jpg', 'Rs. 17090', 'Rs. 16890', 'Rs. 200', '2 Year', 'Rs. 2815 for 6 months', '6 days', 'SAMSUNG', 'Air Conditioner', 'AWT18WKE', 'Window AC 1.5 Ton, Blue Accent-Grill, Bio Sleep, Energy Saver, Bio-Filter, UTR Compressor-Cooling at');
+INSERT INTO `all_model` VALUES ('All/410-Deluxe-Proffessional.jpg', 'Rs. 29750', 'Rs. 27000', 'Rs. 2750', '2 Year', 'Rs. 4500 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '410-Deluxe-Proffessional', '410 Ltr Frost Free Refrigerator Deluxe Professional Titanium,  Free Diamond Pendant worth Rs. 4990.0');
+INSERT INTO `all_model` VALUES ('All/450-Deluxe-Proffessional.jpg', 'Rs. 35525', 'Rs. 31990', 'Rs. 3535', '2 Year', 'Rs. 5332 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '450-Deluxe-Proffessional', '450 Ltr Frost Free Refrigerator Deluxe Professional Finish+ Free Diamond Pendant worth Rs. 4990.00');
+INSERT INTO `all_model` VALUES ('All/220-Mas-Dlx.jpg', 'Rs. 24150', 'Rs. 21500', 'Rs. 2650', '2 Year', 'Rs. 3583 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '220-Mas-Dlx', '340 Ltr Frost Free Refrigerator Elite Professional Finish 4S - Free Diamond Pendant worth Rs. 4990');
+INSERT INTO `all_model` VALUES ('All/310-Del-Professional.jpg', 'Rs. 21525', 'Rs. 18990', 'Rs. 2535', '2 Year', 'Rs. 3165 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '310-Del-Professional', '310 Ltr Frost Free Refrigerator Deluxe Professional Titanium 4S - Free Diamond Pendant worth Rs. 499');
+INSERT INTO `all_model` VALUES ('All/VCE05Z.jpg', 'Rs. 5690', 'Rs. 5335', 'Rs. 355', '2 Year', 'Rs. 889 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VCE05Z', '');
+INSERT INTO `all_model` VALUES ('All/VCL05Z.jpg', 'Rs. 5990', 'Rs. 5643', 'Rs. 347', '2 Year', 'Rs. 941 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VCL05Z', '');
+INSERT INTO `all_model` VALUES ('All/VCE08Z.jpg', 'Rs. 6090', 'Rs. 5900', 'Rs. 190', '2 Year', 'Rs. 983 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VCE08Z', '');
+INSERT INTO `all_model` VALUES ('All/VCL08Z.jpg', 'Rs. 6290', 'Rs. 6053', 'Rs. 237', '2 Year', 'Rs. 1009 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VCL08Z', '');
+INSERT INTO `all_model` VALUES ('All/VAE173.jpg', 'Rs. 7690', 'Rs. 7439', 'Rs. 251', '2 Year', 'Rs. 1240 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VAE173', '170Liters 3 Star');
+INSERT INTO `all_model` VALUES ('All/VAL173.jpg', 'Rs. 7990', 'Rs. 7747', 'Rs. 243', '2 Year', 'Rs. 1291 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VAL173', '170Liters 3 Star');
+INSERT INTO `all_model` VALUES ('All/VAE193.jpg', 'Rs. 8290', 'Rs. 8105', 'Rs. 185', '2 Year', 'Rs. 1351 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VAE193', '190Liters 3 Star');
+INSERT INTO `all_model` VALUES ('All/VBP193.jpg', 'Rs. 8990', 'Rs. 8900', 'Rs. 90', '2 Year', 'Rs. 1483 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VBP193', '190Liters 3 Star');
+INSERT INTO `all_model` VALUES ('All/VBL214.jpg', 'Rs. 9990', 'Rs. 9000', 'Rs. 990', '2 Year', 'Rs. 1500 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VBL214', '215Liters 4 Star');
+INSERT INTO `all_model` VALUES ('All/VAP233.jpg', 'Rs. 10990', 'Rs. 10000', 'Rs. 990', '2 Year', 'Rs. 1667 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VAP233', '230Liters 3 Star');
+INSERT INTO `all_model` VALUES ('All/VAL233.jpg', 'Rs. 11490', 'Rs. 11290', 'Rs. 200', '2 Year', 'Rs. 1882 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VAL233', '230Liters 3 Star');
+INSERT INTO `all_model` VALUES ('All/VCL303.jpg', 'Rs. 14990', 'Rs. 14000', 'Rs. 990', '2 Year', 'Rs. 2333 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'VCL303', '300Liters 3 Star');
+INSERT INTO `all_model` VALUES ('All/RT45EASM1XTL.jpg', 'Rs. 34000', 'Rs. 32000', 'Rs. 2000', '2 Year', 'Rs. 5333 for 6 months', '6 days', 'SAMSUNG', 'Refrigerator', 'RT45EASM1XTL', '');
+INSERT INTO `all_model` VALUES ('All/RA18QHMB.jpg', 'Rs. 8500', 'Rs. 8200', 'Rs. 300', '2 Year', 'Rs. 1367 for 6 months', '6 days', 'SAMSUNG', 'Refrigerator', 'RA18QHMB', '');
+INSERT INTO `all_model` VALUES ('All/RT41MCMT1XTL.jpg', 'Rs. 29000', 'Rs. 27000', 'Rs. 2000', '2 Year', 'Rs. 4500 for 6 months', '6 days', 'SAMSUNG', 'Refrigerator', 'RT41MCMT1XTL', '');
+INSERT INTO `all_model` VALUES ('All/RT41EASM1XTL.jpg', 'Rs. 31000', 'Rs. 29000', 'Rs. 2000', '2 Year', 'Rs. 4833 for 6 months', '6 days', 'SAMSUNG', 'Refrigerator', 'RT41EASM1XTL', '');
+INSERT INTO `all_model` VALUES ('All/RT45MCMT1XTL.jpg', 'Rs. 32000', 'Rs. 30000', 'Rs. 2000', '2 Year', 'Rs. 5000 for 6 months', '6 days', 'SAMSUNG', 'Refrigerator', 'RT45MCMT1XTL', '');
+INSERT INTO `all_model` VALUES ('All/19B1B2.jpg', 'Rs. 10190', 'Rs. 9770', 'Rs. 420', '2 Year', 'Rs. 1628 for 6 months', '6 days', 'GODREJ', 'Refrigerator', '19B1B2', '');
+INSERT INTO `all_model` VALUES ('All/GDP-V2-195C.jpg', 'Rs. 11380', 'Rs. 10920', 'Rs. 460', '2 Year', 'Rs. 1820 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GDP-V2-195C', '');
+INSERT INTO `all_model` VALUES ('All/GDP-V2-195S.jpg', 'Rs. 12090', 'Rs. 11610', 'Rs. 480', '2 Year', 'Rs. 1935 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GDP-V2-195S', '');
+INSERT INTO `all_model` VALUES ('All/GDN-180-P.jpg', 'Rs. 9060', 'Rs. 8680', 'Rs. 380', '2 Year', 'Rs. 1447 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GDN-180-P', '');
+INSERT INTO `all_model` VALUES ('All/CGD300L1.jpg', 'Rs. 15750', 'Rs. 15180', 'Rs. 570', '2 Year', 'Rs. 2530 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'CGD300L1', '');
+INSERT INTO `all_model` VALUES ('All/gfp220.jpg', 'Rs. 14600', 'Rs. 14065', 'Rs. 535', '2 Year', 'Rs. 2344 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'gfp220', '');
+INSERT INTO `all_model` VALUES ('All/GFE-25-AD.jpg', 'Rs. 15100', 'Rs. 14745', 'Rs. 355', '2 Year', 'Rs. 2458 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GFE-25-AD', '');
+INSERT INTO `all_model` VALUES ('All/GDE19B1.jpg', 'Rs. 8600', 'Rs. 8400', 'Rs. 200', '2 Year', 'Rs. 1400 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GDE19B1', '');
+INSERT INTO `all_model` VALUES ('All/GFE-28-DZ.jpg', 'Rs. 18880', 'Rs. 18485', 'Rs. 395', '2 Year', 'Rs. 3081 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GFE-28-DZ', '');
+INSERT INTO `all_model` VALUES ('All/GFE32DZ.jpg', 'Rs. 22880', 'Rs. 22680', 'Rs. 200', '2 Year', 'Rs. 3780 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GFE32DZ', '');
+INSERT INTO `all_model` VALUES ('All/GFE-36-DZ.jpg', 'Rs. 25880', 'Rs. 25575', 'Rs. 305', '2 Year', 'Rs. 4263 for 6 months', '6 days', 'GODREJ', 'Refrigerator', 'GFE-36-DZ', '');
+INSERT INTO `all_model` VALUES ('All/410-Elite.jpg', 'Rs. 32100', 'Rs. 30900', 'Rs. 1200', '2 Year', 'Rs. 5150 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '410-Elite', '410 Ltr Frost Free Refrigerator Elite Professional Finish');
+INSERT INTO `all_model` VALUES ('All/450-Elite.jpg', 'Rs. 35525', 'Rs. 34500', 'Rs. 1025', '2 Year', 'Rs. 5750 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '450-Elite', '450 Ltr Frost Free Refrigerator Elite Professional Finish');
+INSERT INTO `all_model` VALUES ('All/220L-Mas-Dlx.jpg', 'Rs. 16275', 'Rs. 14675', 'Rs. 1600', '2 Year', 'Rs. 2446 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '220L-Mas-Dlx', '220 Ltr Frost Free Refrigerator Mastermind Deluxe Finish');
+INSERT INTO `all_model` VALUES ('All/220-Mas-Dlx-S.jpg', 'Rs. 15960', 'Rs. 14250', 'Rs. 1710', '2 Year', 'Rs. 2375 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '220-Mas-Dlx-S', '220 Ltr Frost Free Refrigerator Mastermind Deluxe Steel');
+INSERT INTO `all_model` VALUES ('All/220-Mas-Elite.jpg', 'Rs. 17325', 'Rs. 15500', 'Rs. 1825', '2 Year', 'Rs. 2583 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '220-Mas-Elite', '220 Ltr Frost Free Refrigerator Mastermind Elite Steel');
+INSERT INTO `all_model` VALUES ('All/250-Mas-Elite.jpg', 'Rs. 19215', 'Rs. 17370', 'Rs. 1845', '2 Year', 'Rs. 2895 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '250-Mas-Elite', '250 Ltr Frost Free Refrigerator Mastermind Elite Finish');
+INSERT INTO `all_model` VALUES ('All/250-Mas-EliteS.jpg', 'Rs. 18900', 'Rs. 16900', 'Rs. 2000', '2 Year', 'Rs. 2817 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '250-Mas-EliteS', '250 Ltr Frost Free Refrigerator Mastermind Elite Steel');
+INSERT INTO `all_model` VALUES ('All/280-Mas-Dlx.jpg', 'Rs. 19425', 'Rs. 17117', 'Rs. 2308', '2 Year', 'Rs. 2853 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '280-Mas-Dlx', '280 Ltr Frost Free Refrigerator Mastermind Deluxe Finish');
+INSERT INTO `all_model` VALUES ('All/200-Fusion.jpg', 'Rs. 14750', 'Rs. 12400', 'Rs. 2350', '2 Year', 'Rs. 2067 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '200-Fusion', '200 Ltr Frost Control Refrigerator Fusion Royale Titanium 4S');
+INSERT INTO `all_model` VALUES ('All/230-Fusion.jpg', 'Rs. 15375', 'Rs. 13385', 'Rs. 1990', '2 Year', 'Rs. 2231 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '230-Fusion', '230 Ltr Frost Control Refrigerator Fusion Premier Titanium 4S');
+INSERT INTO `all_model` VALUES ('All/230_Royale.jpg', 'Rs. 16650', 'Rs. 14085', 'Rs. 2565', '2 Year', 'Rs. 2348 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '230_Royale', '230 Ltr Frost Control Refrigerator Fusion Royale Titanium 4S');
+INSERT INTO `all_model` VALUES ('All/230_RoyaleS.jpg', 'Rs. 16950', 'Rs. 14333', 'Rs. 2617', '2 Year', 'Rs. 2389 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '230_RoyaleS', '230 Ltr Frost Control Refrigerator Fusion Royale Finish 4S');
+INSERT INTO `all_model` VALUES ('All/260-Fusion.jpg', 'Rs. 16800', 'Rs. 14700', 'Rs. 2100', '2 Year', 'Rs. 2450 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '260-Fusion', '260 Ltr Frost Control Refrigerator Fusion Premier Titanium 4S');
+INSERT INTO `all_model` VALUES ('All/180-Royal.jpg', 'Rs. 12500', 'Rs. 11200', 'Rs. 1300', '2 Year', 'Rs. 1867 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '180-Royal', '180 Ltr Direct Cool Refrigerator Genius Royale Finish 4S');
+INSERT INTO `all_model` VALUES ('All/180-Titanium.jpg', 'Rs. 12150', 'Rs. 10990', 'Rs. 1160', '2 Year', 'Rs. 1832 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '180-Titanium', '180 Ltr Direct Cool Refrigerator Genius Royale Titanium 4S');
+INSERT INTO `all_model` VALUES ('All/220-Mas-Elite1.jpg', 'Rs. 18750', 'Rs. 16287', 'Rs. 2463', '2 Year', 'Rs. 2715 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '220-Mas-Elite1', '220 Ltr Frost Free Refrigerator Mastermind Elite Finish');
+INSERT INTO `all_model` VALUES ('All/200-Fusion-Royale.jpg', 'Rs. 12400', 'Rs. 11000', 'Rs. 1400', '2 Year', 'Rs. 1833 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '200-Fusion-Royale', '200 Ltr Frost Control Refrigerator Fusion Royale Finish 4S');
+INSERT INTO `all_model` VALUES ('All/280-Mas-DlxS.jpg', 'Rs. 19110', 'Rs. 16550', 'Rs. 2560', '2 Year', 'Rs. 2758 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '280-Mas-DlxS', '280 Ltr Frost Free Refrigerator Mastermind Deluxe Steel');
+INSERT INTO `all_model` VALUES ('All/280-Mas-Elite.jpg', 'Rs. 20580', 'Rs. 17300', 'Rs. 3280', '2 Year', 'Rs. 2883 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '280-Mas-Elite', '280 Ltr Frost Free Refrigerator Mastermind Elite Finish');
+INSERT INTO `all_model` VALUES ('All/260_Fusion.jpg', 'Rs. 17325', 'Rs. 15050', 'Rs. 2275', '2 Year', 'Rs. 2508 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '260_Fusion', '260 Ltr Frost Control Refrigerator Fusion Royale Finish 4S');
+INSERT INTO `all_model` VALUES ('All/310_WPool.jpg', 'Rs. 23400', 'Rs. 19990', 'Rs. 3410', '2 Year', 'Rs. 3332 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', '310_WPool', 'Whirlpool Professional Classic 310 Lts Refrigerator');
+INSERT INTO `all_model` VALUES ('All/MM26-Clx.jpg', 'Rs. 23100', 'Rs. 21100', 'Rs. 2000', '2 Year', 'Rs. 3517 for 6 months', '6 days', 'WHIRLPOOL', 'Refrigerator', 'MM26-Clx', 'Professional 340 Classic/340 Lts Refrigerator');
+INSERT INTO `all_model` VALUES ('All/D245.jpg', 'Rs. 14500', 'Rs. 9999', 'Rs. 4501', '2 Year', 'Rs. 1667 for 6 months', '6 days', 'VIDEOCON', 'Refrigerator', 'D245', '245 Ltr.');
+INSERT INTO `all_model` VALUES ('All/PET702.jpg', 'Rs. 11950', 'Rs. 6995', 'Rs. 4955', '2 Year', 'Rs. 1166 for 6 months', '6 days', 'PHILIPS', 'DVD Player', 'PET702', '');
+INSERT INTO `all_model` VALUES ('All/SWIVEL-DVP-FX810.jpg', 'Rs. 17950', 'Rs. 12950', 'Rs. 5000', '2 Year', 'Rs. 2158 for 6 months', '6 days', 'SONY', 'DVD Player', 'SWIVEL-DVP-FX810', '');
+INSERT INTO `all_model` VALUES ('All/DP351.jpg', 'Rs. 10500', 'Rs. 7995', 'Rs. 2505', '2 Year', 'Rs. 1333 for 6 months', '6 days', 'LG', 'DVD Player', 'DP351', 'LG PORTABLE 7'' LCD DVD PLAYER');
+INSERT INTO `all_model` VALUES ('All/PET717.jpg', 'Rs. 7499', 'Rs. 6750', 'Rs. 749', '2 Year', 'Rs. 1125 for 6 months', '6 days', 'PHILIPS', 'DVD Player', 'PET717', '');
+INSERT INTO `all_model` VALUES ('All/DVP-FX810.jpg', 'Rs. 14990', 'Rs. 12495', 'Rs. 2495', '2 Year', 'Rs. 2083 for 6 months', '6 days', 'SONY', 'DVD Player', 'DVP-FX810', '');
+INSERT INTO `all_model` VALUES ('All/SWIVEL-DVP8-FX810.jpg', 'Rs. 14990', 'Rs. 13495', 'Rs. 1495', '2 Year', 'Rs. 2249 for 6 months', '6 days', 'SONY', 'DVD Player', 'SWIVEL-DVP8-FX810', '');
+INSERT INTO `all_model` VALUES ('All/TMI0041.jpg', 'Rs. 5995', 'Rs. 3395', 'Rs. 2600', '2 Year', 'Rs. 566 for 6 months', '6 days', 'SONY', 'DVD Player', 'TMI0041', '');
+INSERT INTO `all_model` VALUES ('All/DVP-NS608.jpg', 'Rs. 3295', 'Rs. 3295', 'Rs. 0', '2 Year', 'Rs. 548 for 6 months', '6 days', 'SONY', 'DVD Player', 'DVP-NS608', '');
+INSERT INTO `all_model` VALUES ('All/DVP-NS575.jpg', 'Rs. 7500', 'Rs. 4550', 'Rs. 2950', '2 Year', 'Rs. 758 for 6 months', '6 days', 'SONY', 'DVD Player', 'DVP-NS575', '');
+INSERT INTO `all_model` VALUES ('All/DVP3126.jpg', 'Rs. 3499', 'Rs. 3000', 'Rs. 499', '2 Year', 'Rs. 500 for 6 months', '6 days', 'PHILIPS', 'DVD Player', 'DVP3126', '');
+INSERT INTO `all_model` VALUES ('All/DVD-P183.jpg', 'Rs. 3495', 'Rs. 2995', 'Rs. 500', '2 Year', 'Rs. 998 for 6 months', '6 days', 'SAMSUNG', 'DVD Player', 'DVD-P183', '');
+INSERT INTO `all_model` VALUES ('All/Akai-dvd.jpg', 'Rs. 2700', 'Rs. 2056', 'Rs. 644', '2 Year', 'Rs. 685 for 6 months', '6 days', 'AKAI', 'DVD Player', 'Akai-dvd', '');
+INSERT INTO `all_model` VALUES ('All/DD-345.jpg', 'Rs. 4995', 'Rs. 3995', 'Rs. 1000', '2 Year', 'Rs. 666 for 6 months', '6 days', 'LG', 'DVD Player', 'DD-345', '');
+INSERT INTO `all_model` VALUES ('All/DVP3256X.jpg', 'Rs. 3990', 'Rs. 3490', 'Rs. 500', '2 Year', 'Rs. 582 for 6 months', '6 days', 'PHILIPS', 'DVD Player', 'DVP3256X', '');
+INSERT INTO `all_model` VALUES ('All/DVD-Top-604.jpg', 'Rs. 4100', 'Rs. 2850', 'Rs. 1250', '2 Year', 'Rs. 950 for 6 months', '6 days', 'GODREJ', 'DVD Player', 'DVD-Top-604', '');
+INSERT INTO `all_model` VALUES ('All/DVD-P480.jpg', 'Rs. 3995', 'Rs. 3495', 'Rs. 500', '2 Year', 'Rs. 583 for 6 months', '6 days', 'SAMSUNG', 'DVD Player', 'DVD-P480', '');
+INSERT INTO `all_model` VALUES ('All/DD-350.jpg', 'Rs. 3995', 'Rs. 3395', 'Rs. 600', '2 Year', 'Rs. 566 for 6 months', '6 days', 'LG', 'DVD Player', 'DD-350', '');
+INSERT INTO `all_model` VALUES ('All/DVP3246.jpg', 'Rs. 3600', 'Rs. 2899', 'Rs. 701', '2 Year', 'Rs. 966 for 6 months', '6 days', 'PHILIPS', 'DVD Player', 'DVP3246', '');
+INSERT INTO `all_model` VALUES ('All/Videocon5.jpg', 'Rs. 2900', 'Rs. 2217', 'Rs. 683', '2 Year', 'Rs. 739 for 6 months', '6 days', 'VIDEOCON', 'DVD Player', 'Videocon5', 'DVD 5.1 Channel with Amplifier');
+INSERT INTO `all_model` VALUES ('All/Videocon51.jpg', 'Rs. 3090', 'Rs. 2360', 'Rs. 730', '2 Year', 'Rs. 787 for 6 months', '6 days', 'VIDEOCON', 'DVD Player', 'Videocon51', 'DVD 5.1 Channel with Amplifier & Game facility');
+INSERT INTO `all_model` VALUES ('All/sansui-DVD-5.jpg', 'Rs. 2950', 'Rs. 2258', 'Rs. 692', '2 Year', 'Rs. 753 for 6 months', '6 days', 'SANSUI', 'DVD Player', 'sansui-DVD-5', 'DVD 5.1 Channel with Amplifier');
+INSERT INTO `all_model` VALUES ('All/Sansui-DVD-AU.jpg', 'Rs. 3150', 'Rs. 2756', 'Rs. 394', '2 Year', 'Rs. 919 for 6 months', '6 days', 'SANSUI', 'DVD Player', 'Sansui-DVD-AU', 'DVD 5.1 Channel with Amplifier & USB');
+INSERT INTO `all_model` VALUES ('All/DVP3996_94.jpg', 'Rs. 4299', 'Rs. 4100', 'Rs. 199', '2 Year', 'Rs. 683 for 6 months', '6 days', 'PHILIPS', 'DVD Player', 'DVP3996_94', 'DVD Player with HDMI and USB');
+INSERT INTO `all_model` VALUES ('All/DVP-SR200PB.jpg', 'Rs. 2990', 'Rs. 2990', 'Rs. 0', '2 Year', 'Rs. 997 for 6 months', '6 days', 'SONY', 'DVD Player', 'DVP-SR200PB', '');
